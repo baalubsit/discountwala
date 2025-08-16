@@ -3,202 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiscountFinder India - Best Deals & Discounts Across India</title>
+    <title>DiscountFinder India - Best Deals & Offers</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Find the best deals and discounts from top Indian e-commerce stores - Amazon, Flipkart, Myntra, and more!">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="header-content">
+            <div class="header__content">
                 <div class="logo">
-                    <h1>💰 DiscountFinder India</h1>
+                    <h1>💸 DiscountFinder India</h1>
+                    <span class="tagline">Best Deals, Bigger Savings!</span>
                 </div>
                 <nav class="nav">
-                    <a href="#home" class="nav-link">Home</a>
-                    <a href="#categories" class="nav-link">Categories</a>
-                    <a href="#deals" class="nav-link">Deals</a>
-                    <a href="#about" class="nav-link">About</a>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
                 </nav>
-                <div class="header-actions">
-                    <div class="search-container">
-                        <input type="text" id="search-input" class="search-input" placeholder="Search deals, stores, products...">
-                        <div class="search-suggestions" id="search-suggestions"></div>
-                    </div>
-                    <div class="user-profile">
-                        <span class="user-icon">👤</span>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <main class="main">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h2 class="hero-title">Discover India's Best Discounts & Deals</h2>
-                    <p class="hero-description">Save big with exclusive offers across 10,000+ stores in 500+ cities. Find the perfect deal near you!</p>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="stat-number">10K+</span>
-                            <span class="stat-label">Active Deals</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Cities</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">₹50L+</span>
-                            <span class="stat-label">Money Saved</span>
-                        </div>
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="form-control search-input" 
+                            placeholder="Search for products, brands, or stores..."
+                            autocomplete="off"
+                        >
+                        <div class="search-suggestions" id="searchSuggestions"></div>
                     </div>
-                    <button class="btn btn--primary btn--lg cta-button">Explore Deals Now</button>
+                    <button class="btn btn--primary search-btn" id="searchBtn">
+                        <span>🔍 Search</span>
+                    </button>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Filter Section -->
-    <section class="filters">
-        <div class="container">
-            <div class="filters-content">
-                <h3 class="filters-title">Find Your Perfect Deal</h3>
-                <form class="filters-form" id="filters-form">
+            <!-- Filters Section -->
+            <section class="filters-section">
+                <div class="filters-container">
                     <div class="filter-group">
-                        <label class="form-label" for="category-filter">Shopping Category</label>
-                        <select id="category-filter" class="form-control">
+                        <label class="form-label">Store</label>
+                        <select id="storeFilter" class="form-control">
+                            <option value="">All Stores</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="form-label">Category</label>
+                        <select id="categoryFilter" class="form-control">
                             <option value="">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="home_kitchen">Home & Kitchen</option>
+                            <option value="beauty_health">Beauty & Health</option>
+                            <option value="grocery_food">Grocery & Food</option>
+                            <option value="books_education">Books & Education</option>
+                            <option value="sports_fitness">Sports & Fitness</option>
                         </select>
                     </div>
                     <div class="filter-group">
-                        <label class="form-label" for="state-filter">State</label>
-                        <select id="state-filter" class="form-control">
-                            <option value="">Select State</option>
+                        <label class="form-label">Sort By</label>
+                        <select id="sortFilter" class="form-control">
+                            <option value="discount_desc">Highest Discount</option>
+                            <option value="price_asc">Price: Low to High</option>
+                            <option value="price_desc">Price: High to Low</option>
+                            <option value="rating_desc">Highest Rating</option>
+                            <option value="newest">Newest First</option>
                         </select>
                     </div>
-                    <div class="filter-group">
-                        <label class="form-label" for="city-filter">City</label>
-                        <select id="city-filter" class="form-control" disabled>
-                            <option value="">Select City</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label class="form-label" for="location-filter">Location/Area</label>
-                        <input type="text" id="location-filter" class="form-control" placeholder="Enter specific area">
-                    </div>
-                    <div class="filter-group">
-                        <label class="form-label" for="discount-type-filter">Discount Type</label>
-                        <select id="discount-type-filter" class="form-control">
-                            <option value="">All Discount Types</option>
-                        </select>
-                    </div>
-                    <div class="filter-actions">
-                        <button type="button" class="btn btn--primary" id="apply-filters">Apply Filters</button>
-                        <button type="button" class="btn btn--outline" id="clear-filters">Clear All</button>
-                    </div>
-                </form>
+                    <button class="btn btn--secondary" id="clearFilters">Clear All</button>
+                </div>
+            </section>
+
+            <!-- Loading Spinner -->
+            <div class="loading-container hidden" id="loadingSpinner">
+                <div class="loading-spinner"></div>
+                <p>Finding the best deals for you...</p>
+            </div>
+
+            <!-- Results Count -->
+            <div class="results-info" id="resultsInfo">
+                <span id="resultsCount">Loading deals...</span>
+            </div>
+
+            <!-- Deals Grid -->
+            <section class="deals-section">
+                <div class="deals-grid" id="dealsGrid">
+                    <!-- Deal cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Load More Button -->
+            <div class="load-more-container hidden" id="loadMoreContainer">
+                <button class="btn btn--outline btn--lg" id="loadMoreBtn">Load More Deals</button>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Featured Deals Section -->
-    <section class="deals" id="deals">
-        <div class="container">
-            <div class="deals-header">
-                <h3 class="deals-title">Featured Deals</h3>
-                <div class="sort-options">
-                    <label class="form-label" for="sort-select">Sort by:</label>
-                    <select id="sort-select" class="form-control">
-                        <option value="discount_percentage">Highest Discount</option>
-                        <option value="price_low">Price: Low to High</option>
-                        <option value="price_high">Price: High to Low</option>
-                        <option value="rating">Highest Rated</option>
-                        <option value="expiry">Ending Soon</option>
-                    </select>
+    <!-- Deal Detail Modal -->
+    <div class="modal hidden" id="dealModal">
+        <div class="modal__backdrop" id="modalBackdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="modalTitle">Deal Details</h3>
+                <button class="modal__close" id="modalClose" aria-label="Close modal">×</button>
+            </div>
+            <div class="modal__body">
+                <div class="modal-deal-content" id="modalContent">
+                    <!-- Modal content will be populated by JavaScript -->
                 </div>
             </div>
-            <div class="loading-spinner hidden" id="loading-spinner">
-                <div class="spinner"></div>
-                <p>Loading deals...</p>
-            </div>
-            <div class="deals-grid" id="deals-grid">
-                <!-- Deal cards will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Section -->
-    <section class="categories" id="categories">
-        <div class="container">
-            <h3 class="categories-title">Shop by Categories</h3>
-            <div class="categories-grid" id="categories-grid">
-                <!-- Category cards will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Popular Stores Section -->
-    <section class="stores">
-        <div class="container">
-            <h3 class="stores-title">Popular Stores</h3>
-            <div class="stores-scroll" id="stores-scroll">
-                <!-- Store cards will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Deal Details Modal -->
-    <div class="modal hidden" id="deal-modal">
-        <div class="modal-overlay" id="modal-overlay"></div>
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="modal-title">Deal Details</h4>
-                <button class="modal-close" id="modal-close">&times;</button>
-            </div>
-            <div class="modal-body" id="modal-body">
-                <!-- Modal content will be populated by JavaScript -->
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn--primary btn--full-width" id="grab-deal-btn">Grab This Deal</button>
+            <div class="modal__footer">
+                <button class="btn btn--outline" id="modalCloseBtn">Close</button>
+                <a class="btn btn--primary" id="modalProceedBtn" href="#" target="_blank" rel="noopener noreferrer">
+                    🛒 Proceed to Store
+                </a>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+            <div class="footer__content">
+                <div class="footer__section">
                     <h4>DiscountFinder India</h4>
-                    <p>Your trusted partner for finding the best deals and discounts across India.</p>
+                    <p>Your one-stop destination for the best deals and discounts from top Indian e-commerce stores.</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="#deals">Deals</a></li>
-                        <li><a href="#about">About Us</a></li>
+                <div class="footer__section">
+                    <h5>Partner Stores</h5>
+                    <ul class="footer__links">
+                        <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer">Amazon India</a></li>
+                        <li><a href="https://www.flipkart.com" target="_blank" rel="noopener noreferrer">Flipkart</a></li>
+                        <li><a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer">Myntra</a></li>
+                        <li><a href="https://www.nykaa.com" target="_blank" rel="noopener noreferrer">Nykaa</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>📧 info@discountfinderindia.com</p>
-                    <p>📞 +91-9876543210</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" target="_blank">📘 Facebook</a>
-                        <a href="#" target="_blank">🐦 Twitter</a>
-                        <a href="#" target="_blank">📷 Instagram</a>
-                    </div>
+                <div class="footer__section">
+                    <h5>Categories</h5>
+                    <ul class="footer__links">
+                        <li>Electronics</li>
+                        <li>Fashion</li>
+                        <li>Home & Kitchen</li>
+                        <li>Beauty & Health</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class="footer__bottom">
                 <p>&copy; 2025 DiscountFinder India. All rights reserved.</p>
+                <p class="commission-disclaimer">
+                    <small>⚠️ We may earn a commission from qualifying purchases made through our affiliate links at no extra cost to you.</small>
+                </p>
             </div>
         </div>
     </footer>

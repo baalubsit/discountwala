@@ -1,0 +1,772 @@
+{
+  "stores": {
+    "amazon_india": {
+      "name": "Amazon India",
+      "base_url": "https://www.amazon.in",
+      "affiliate_structure": "https://www.amazon.in/dp/{asin}/?tag={affiliate_id}",
+      "affiliate_id": "discountfind-21",
+      "api_available": true,
+      "categories": [
+        "electronics",
+        "fashion",
+        "home_kitchen",
+        "beauty_health",
+        "grocery_food",
+        "books_education",
+        "sports_fitness"
+      ],
+      "commission_rate": "Up to 8%",
+      "cashback": "Up to 5%"
+    },
+    "flipkart": {
+      "name": "Flipkart",
+      "base_url": "https://www.flipkart.com",
+      "affiliate_structure": "https://www.flipkart.com/{product_url}?affid={affiliate_id}",
+      "affiliate_id": "discountfi",
+      "api_available": true,
+      "categories": [
+        "electronics",
+        "fashion",
+        "home_kitchen",
+        "grocery_food",
+        "books_education",
+        "sports_fitness"
+      ],
+      "commission_rate": "Up to 12%",
+      "cashback": "Up to 7%"
+    },
+    "myntra": {
+      "name": "Myntra",
+      "base_url": "https://www.myntra.com",
+      "affiliate_structure": "https://www.myntra.com/{product_id}?utm_source=dma_{affiliate_id}",
+      "affiliate_id": "discount_finder",
+      "api_available": true,
+      "categories": [
+        "fashion"
+      ],
+      "commission_rate": "Up to 10%",
+      "cashback": "Up to 6.7%"
+    },
+    "nykaa": {
+      "name": "Nykaa",
+      "base_url": "https://www.nykaa.com",
+      "affiliate_structure": "https://www.nykaa.com/{product_url}?utm_source={affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "beauty_health"
+      ],
+      "commission_rate": "Up to 15%",
+      "cashback": "Up to 8%"
+    },
+    "bigbasket": {
+      "name": "BigBasket",
+      "base_url": "https://www.bigbasket.com",
+      "affiliate_structure": "https://www.bigbasket.com/pd/{product_id}/?nc=as-{affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "grocery_food"
+      ],
+      "commission_rate": "Up to 6%",
+      "cashback": "Up to 4%"
+    },
+    "croma": {
+      "name": "Croma",
+      "base_url": "https://www.croma.com",
+      "affiliate_structure": "https://www.croma.com/{product_url}?ref={affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "electronics"
+      ],
+      "commission_rate": "Up to 5%",
+      "cashback": "Up to 3%"
+    },
+    "ajio": {
+      "name": "AJIO",
+      "base_url": "https://www.ajio.com",
+      "affiliate_structure": "https://www.ajio.com/p/{product_id}?source={affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "fashion"
+      ],
+      "commission_rate": "Up to 8%",
+      "cashback": "Up to 5%"
+    },
+    "meesho": {
+      "name": "Meesho",
+      "base_url": "https://www.meesho.com",
+      "affiliate_structure": "https://www.meesho.com/s/p/{product_id}?srsltid={affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "fashion",
+        "home_kitchen"
+      ],
+      "commission_rate": "Up to 12%",
+      "cashback": "Up to 6%"
+    },
+    "snapdeal": {
+      "name": "Snapdeal",
+      "base_url": "https://www.snapdeal.com",
+      "affiliate_structure": "https://www.snapdeal.com/product/{product_name}/{product_id}?utm_source={affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "electronics",
+        "fashion",
+        "home_kitchen"
+      ],
+      "commission_rate": "Up to 10%",
+      "cashback": "Up to 5%"
+    },
+    "tatacliq": {
+      "name": "Tata CLiQ",
+      "base_url": "https://www.tatacliq.com",
+      "affiliate_structure": "https://www.tatacliq.com/{product_url}?cid={affiliate_id}",
+      "affiliate_id": "discountfinder",
+      "api_available": false,
+      "categories": [
+        "electronics",
+        "fashion",
+        "beauty_health"
+      ],
+      "commission_rate": "Up to 7%",
+      "cashback": "Up to 4%"
+    }
+  },
+  "deals": [
+    {
+      "id": 1,
+      "title": "Samsung Galaxy S24 Ultra 256GB",
+      "store": "amazon_india",
+      "store_name": "Amazon India",
+      "category": "electronics",
+      "original_price": 124999,
+      "discounted_price": 94999,
+      "discount_percentage": 24,
+      "discount_type": "percentage",
+      "cashback": "5% Extra Cashback",
+      "location": [
+        "Delhi",
+        "Mumbai",
+        "Bangalore",
+        "Chennai",
+        "Hyderabad"
+      ],
+      "state": [
+        "Delhi",
+        "Maharashtra",
+        "Karnataka",
+        "Tamil Nadu",
+        "Andhra Pradesh"
+      ],
+      "valid_until": "2025-08-31",
+      "description": "Latest flagship smartphone with 200MP camera, S Pen, and 5000mAh battery",
+      "rating": 4.5,
+      "product_url": "Samsung-Galaxy-S24-Ultra-256GB/dp/B0CW1KXR2V",
+      "asin": "B0CW1KXR2V",
+      "image_url": "https://m.media-amazon.com/images/I/71lKHVfZZbL._SX679_.jpg",
+      "affiliate_url": "https://www.amazon.in/dp/B0CW1KXR2V/?tag=discountfind-21"
+    },
+    {
+      "id": 2,
+      "title": "Apple MacBook Air M2 13-inch",
+      "store": "flipkart",
+      "store_name": "Flipkart",
+      "category": "electronics",
+      "original_price": 114900,
+      "discounted_price": 99900,
+      "discount_percentage": 13,
+      "discount_type": "fixed_amount",
+      "cashback": "7% Cashback + No Cost EMI",
+      "location": [
+        "Chennai",
+        "Hyderabad",
+        "Pune",
+        "Kolkata",
+        "Ahmedabad"
+      ],
+      "state": [
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "Maharashtra",
+        "West Bengal",
+        "Gujarat"
+      ],
+      "valid_until": "2025-09-15",
+      "description": "Ultra-thin laptop with M2 chip, 13.6-inch Liquid Retina display, and 18-hour battery",
+      "rating": 4.7,
+      "product_url": "apple-macbook-air-m2-13-inch/p/itm8b6619074e092",
+      "affiliate_url": "https://www.flipkart.com/apple-macbook-air-m2-13-inch/p/itm8b6619074e092?affid=discountfi"
+    },
+    {
+      "id": 3,
+      "title": "Nike Air Max 270 Running Shoes",
+      "store": "myntra",
+      "store_name": "Myntra",
+      "category": "fashion",
+      "original_price": 12995,
+      "discounted_price": 7797,
+      "discount_percentage": 40,
+      "discount_type": "percentage",
+      "cashback": "6.7% Cashback",
+      "location": [
+        "Jaipur",
+        "Ahmedabad",
+        "Kolkata",
+        "Lucknow",
+        "Kochi"
+      ],
+      "state": [
+        "Rajasthan",
+        "Gujarat",
+        "West Bengal",
+        "Uttar Pradesh",
+        "Kerala"
+      ],
+      "valid_until": "2025-08-25",
+      "description": "Premium lifestyle sneakers with Max Air unit and mesh upper for breathability",
+      "rating": 4.3,
+      "product_url": "7834567",
+      "affiliate_url": "https://www.myntra.com/7834567?utm_source=dma_discount_finder"
+    },
+    {
+      "id": 4,
+      "title": "L'Oreal Paris Revitalift Complete Skincare Kit",
+      "store": "nykaa",
+      "store_name": "Nykaa",
+      "category": "beauty_health",
+      "original_price": 2999,
+      "discounted_price": 1799,
+      "discount_percentage": 40,
+      "discount_type": "bogo",
+      "cashback": "8% Cashback + Free Shipping",
+      "location": [
+        "Lucknow",
+        "Kochi",
+        "Coimbatore",
+        "Surat",
+        "Vadodara"
+      ],
+      "state": [
+        "Uttar Pradesh",
+        "Kerala",
+        "Tamil Nadu",
+        "Gujarat",
+        "Gujarat"
+      ],
+      "valid_until": "2025-09-01",
+      "description": "Complete anti-aging skincare routine with cleanser, day cream, night cream and serum",
+      "rating": 4.2,
+      "product_url": "loreal-paris-revitalift-skincare-kit/p/4589562",
+      "affiliate_url": "https://www.nykaa.com/loreal-paris-revitalift-skincare-kit/p/4589562?utm_source=discountfinder"
+    },
+    {
+      "id": 5,
+      "title": "Fresh Organic Vegetable & Fruit Combo",
+      "store": "bigbasket",
+      "store_name": "BigBasket",
+      "category": "grocery_food",
+      "original_price": 1500,
+      "discounted_price": 1200,
+      "discount_percentage": 20,
+      "discount_type": "free_shipping",
+      "cashback": "4% Cashback on First Order",
+      "location": [
+        "Surat",
+        "Vadodara",
+        "Nashik",
+        "Nagpur",
+        "Thane"
+      ],
+      "state": [
+        "Gujarat",
+        "Gujarat",
+        "Maharashtra",
+        "Maharashtra",
+        "Maharashtra"
+      ],
+      "valid_until": "2025-08-30",
+      "description": "Fresh organic vegetables, seasonal fruits and daily essentials delivered to your doorstep",
+      "rating": 4.1,
+      "product_url": "40256789",
+      "affiliate_url": "https://www.bigbasket.com/pd/40256789/?nc=as-discountfinder"
+    },
+    {
+      "id": 6,
+      "title": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+      "store": "croma",
+      "store_name": "Croma",
+      "category": "electronics",
+      "original_price": 29990,
+      "discounted_price": 24990,
+      "discount_percentage": 17,
+      "discount_type": "bundle",
+      "cashback": "3% Cashback + Extended Warranty",
+      "location": [
+        "Thiruvananthapuram",
+        "Jodhpur",
+        "Howrah",
+        "Bhubaneswar",
+        "Guwahati"
+      ],
+      "state": [
+        "Kerala",
+        "Rajasthan",
+        "West Bengal",
+        "Odisha",
+        "Assam"
+      ],
+      "valid_until": "2025-09-10",
+      "description": "Industry-leading noise canceling with 30-hour battery life and premium comfort",
+      "rating": 4.6,
+      "product_url": "sony-wh1000xm5-headphones/p/256789345",
+      "affiliate_url": "https://www.croma.com/sony-wh1000xm5-headphones/p/256789345?ref=discountfinder"
+    },
+    {
+      "id": 7,
+      "title": "Levi's 511 Slim Fit Jeans",
+      "store": "ajio",
+      "store_name": "AJIO",
+      "category": "fashion",
+      "original_price": 3999,
+      "discounted_price": 1999,
+      "discount_percentage": 50,
+      "discount_type": "percentage",
+      "cashback": "5% Cashback",
+      "location": [
+        "Indore",
+        "Bhopal",
+        "Raipur",
+        "Jabalpur",
+        "Gwalior"
+      ],
+      "state": [
+        "Madhya Pradesh",
+        "Madhya Pradesh",
+        "Chhattisgarh",
+        "Madhya Pradesh",
+        "Madhya Pradesh"
+      ],
+      "valid_until": "2025-08-28",
+      "description": "Classic slim fit jeans in premium denim with signature Levi's styling",
+      "rating": 4.4,
+      "product_url": "466234567",
+      "affiliate_url": "https://www.ajio.com/p/466234567?source=discountfinder"
+    },
+    {
+      "id": 8,
+      "title": "Women's Cotton Kurti Set",
+      "store": "meesho",
+      "store_name": "Meesho",
+      "category": "fashion",
+      "original_price": 1299,
+      "discounted_price": 649,
+      "discount_percentage": 50,
+      "discount_type": "percentage",
+      "cashback": "6% Cashback + Free Delivery",
+      "location": [
+        "Kanpur",
+        "Agra",
+        "Varanasi",
+        "Meerut",
+        "Allahabad"
+      ],
+      "state": [
+        "Uttar Pradesh",
+        "Uttar Pradesh",
+        "Uttar Pradesh",
+        "Uttar Pradesh",
+        "Uttar Pradesh"
+      ],
+      "valid_until": "2025-09-05",
+      "description": "Comfortable cotton kurti with palazzo pants, perfect for daily wear",
+      "rating": 4.0,
+      "product_url": "78345612",
+      "affiliate_url": "https://www.meesho.com/s/p/78345612?srsltid=discountfinder"
+    },
+    {
+      "id": 9,
+      "title": "Mi 43-inch 4K Smart LED TV",
+      "store": "snapdeal",
+      "store_name": "Snapdeal",
+      "category": "electronics",
+      "original_price": 32999,
+      "discounted_price": 24999,
+      "discount_percentage": 24,
+      "discount_type": "percentage",
+      "cashback": "5% Cashback",
+      "location": [
+        "Patna",
+        "Ranchi",
+        "Dhanbad",
+        "Jamshedpur",
+        "Bokaro"
+      ],
+      "state": [
+        "Bihar",
+        "Jharkhand",
+        "Jharkhand",
+        "Jharkhand",
+        "Jharkhand"
+      ],
+      "valid_until": "2025-09-12",
+      "description": "4K Ultra HD Smart TV with Android TV, built-in WiFi and premium sound",
+      "rating": 4.2,
+      "product_url": "mi-43-inch-4k-smart-tv/892345123",
+      "affiliate_url": "https://www.snapdeal.com/product/mi-43-inch-4k-smart-tv/892345123?utm_source=discountfinder"
+    },
+    {
+      "id": 10,
+      "title": "Titan Watches for Men",
+      "store": "tatacliq",
+      "store_name": "Tata CLiQ",
+      "category": "fashion",
+      "original_price": 8995,
+      "discounted_price": 6296,
+      "discount_percentage": 30,
+      "discount_type": "percentage",
+      "cashback": "4% Cashback + Gift Wrap",
+      "location": [
+        "Chandigarh",
+        "Amritsar",
+        "Ludhiana",
+        "Jalandhar",
+        "Patiala"
+      ],
+      "state": [
+        "Punjab",
+        "Punjab",
+        "Punjab",
+        "Punjab",
+        "Punjab"
+      ],
+      "valid_until": "2025-08-27",
+      "description": "Premium analog watch with stainless steel case and leather strap",
+      "rating": 4.5,
+      "product_url": "titan-watches-men/p/mp000000009876543",
+      "affiliate_url": "https://www.tatacliq.com/titan-watches-men/p/mp000000009876543?cid=discountfinder"
+    }
+  ],
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Electronics & Gadgets",
+      "icon": "\ud83d\udcf1",
+      "subcategories": [
+        "Smartphones",
+        "Laptops",
+        "Tablets",
+        "Accessories",
+        "Home Appliances",
+        "Audio Equipment",
+        "TV & Entertainment",
+        "Gaming"
+      ]
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion & Apparel",
+      "icon": "\ud83d\udc57",
+      "subcategories": [
+        "Men's Clothing",
+        "Women's Clothing",
+        "Kids Wear",
+        "Footwear",
+        "Accessories",
+        "Jewelry",
+        "Watches",
+        "Ethnic Wear"
+      ]
+    },
+    {
+      "id": "home_kitchen",
+      "name": "Home & Kitchen",
+      "icon": "\ud83c\udfe0",
+      "subcategories": [
+        "Kitchenware",
+        "Home Decor",
+        "Furniture",
+        "Bedding",
+        "Storage",
+        "Appliances",
+        "Garden",
+        "Tools"
+      ]
+    },
+    {
+      "id": "beauty_health",
+      "name": "Beauty & Health",
+      "icon": "\ud83d\udc84",
+      "subcategories": [
+        "Skincare",
+        "Makeup",
+        "Haircare",
+        "Health Supplements",
+        "Personal Care",
+        "Fitness",
+        "Wellness",
+        "Fragrances"
+      ]
+    },
+    {
+      "id": "grocery_food",
+      "name": "Grocery & Food",
+      "icon": "\ud83d\uded2",
+      "subcategories": [
+        "Fresh Produce",
+        "Packaged Foods",
+        "Beverages",
+        "Snacks",
+        "Dairy",
+        "Organic",
+        "Bakery",
+        "Frozen"
+      ]
+    },
+    {
+      "id": "books_education",
+      "name": "Books & Education",
+      "icon": "\ud83d\udcda",
+      "subcategories": [
+        "Academic Books",
+        "Fiction",
+        "Non-Fiction",
+        "Children's Books",
+        "E-books",
+        "Stationery",
+        "Educational Toys",
+        "Courses"
+      ]
+    },
+    {
+      "id": "sports_fitness",
+      "name": "Sports & Fitness",
+      "icon": "\u26bd",
+      "subcategories": [
+        "Exercise Equipment",
+        "Sports Gear",
+        "Outdoor Activities",
+        "Yoga",
+        "Fitness Wear",
+        "Nutrition",
+        "Cycling",
+        "Swimming"
+      ]
+    },
+    {
+      "id": "travel_hotels",
+      "name": "Travel & Hotels",
+      "icon": "\u2708\ufe0f",
+      "subcategories": [
+        "Flight Bookings",
+        "Hotel Stays",
+        "Bus Travel",
+        "Train Tickets",
+        "Holiday Packages",
+        "Car Rentals",
+        "Travel Gear",
+        "Insurance"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "name": "Andhra Pradesh",
+      "cities": [
+        "Hyderabad",
+        "Visakhapatnam",
+        "Vijayawada",
+        "Guntur",
+        "Nellore",
+        "Tirupati",
+        "Kakinada",
+        "Rajahmundry"
+      ]
+    },
+    {
+      "name": "Karnataka",
+      "cities": [
+        "Bangalore",
+        "Mysore",
+        "Hubli",
+        "Mangalore",
+        "Belgaum",
+        "Gulbarga",
+        "Davangere",
+        "Bellary"
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "cities": [
+        "Mumbai",
+        "Pune",
+        "Nagpur",
+        "Thane",
+        "Nashik",
+        "Aurangabad",
+        "Solapur",
+        "Kolhapur"
+      ]
+    },
+    {
+      "name": "Delhi",
+      "cities": [
+        "New Delhi",
+        "North Delhi",
+        "South Delhi",
+        "East Delhi",
+        "West Delhi",
+        "Central Delhi",
+        "Dwarka",
+        "Rohini"
+      ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "cities": [
+        "Chennai",
+        "Coimbatore",
+        "Madurai",
+        "Salem",
+        "Tiruchirappalli",
+        "Tirunelveli",
+        "Erode",
+        "Vellore"
+      ]
+    },
+    {
+      "name": "Gujarat",
+      "cities": [
+        "Ahmedabad",
+        "Surat",
+        "Vadodara",
+        "Rajkot",
+        "Bhavnagar",
+        "Jamnagar",
+        "Gandhinagar",
+        "Anand"
+      ]
+    },
+    {
+      "name": "Rajasthan",
+      "cities": [
+        "Jaipur",
+        "Jodhpur",
+        "Udaipur",
+        "Kota",
+        "Ajmer",
+        "Bikaner",
+        "Alwar",
+        "Bharatpur"
+      ]
+    },
+    {
+      "name": "West Bengal",
+      "cities": [
+        "Kolkata",
+        "Howrah",
+        "Durgapur",
+        "Asansol",
+        "Siliguri",
+        "Malda",
+        "Kharagpur",
+        "Haldia"
+      ]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "cities": [
+        "Lucknow",
+        "Kanpur",
+        "Agra",
+        "Varanasi",
+        "Meerut",
+        "Allahabad",
+        "Bareilly",
+        "Moradabad"
+      ]
+    },
+    {
+      "name": "Kerala",
+      "cities": [
+        "Kochi",
+        "Thiruvananthapuram",
+        "Kozhikode",
+        "Thrissur",
+        "Kollam",
+        "Palakkad",
+        "Malappuram",
+        "Kannur"
+      ]
+    },
+    {
+      "name": "Punjab",
+      "cities": [
+        "Chandigarh",
+        "Amritsar",
+        "Ludhiana",
+        "Jalandhar",
+        "Patiala",
+        "Bathinda",
+        "Mohali",
+        "Pathankot"
+      ]
+    },
+    {
+      "name": "Madhya Pradesh",
+      "cities": [
+        "Bhopal",
+        "Indore",
+        "Gwalior",
+        "Jabalpur",
+        "Ujjain",
+        "Sagar",
+        "Ratlam",
+        "Satna"
+      ]
+    }
+  ],
+  "discountTypes": [
+    {
+      "id": "percentage",
+      "name": "Percentage Off",
+      "description": "Get X% off on your purchase",
+      "example": "20% OFF"
+    },
+    {
+      "id": "fixed_amount",
+      "name": "Fixed Amount Off",
+      "description": "Save a fixed amount in rupees",
+      "example": "\u20b9500 OFF"
+    },
+    {
+      "id": "bogo",
+      "name": "Buy One Get One",
+      "description": "Buy one item, get another free or discounted",
+      "example": "BOGO FREE"
+    },
+    {
+      "id": "cashback",
+      "name": "Cashback Offers",
+      "description": "Get money back on your purchases",
+      "example": "10% Cashback"
+    },
+    {
+      "id": "free_shipping",
+      "name": "Free Shipping",
+      "description": "No delivery charges on orders",
+      "example": "FREE DELIVERY"
+    },
+    {
+      "id": "bundle",
+      "name": "Bundle Deals",
+      "description": "Special pricing on product combinations",
+      "example": "COMBO OFFER"
+    }
+  ]
+}
