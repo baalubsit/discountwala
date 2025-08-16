@@ -1,0 +1,448 @@
+{
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Electronics & Gadgets",
+      "icon": "\ud83d\udcf1",
+      "subcategories": [
+        "Smartphones",
+        "Laptops",
+        "Tablets",
+        "Accessories",
+        "Home Appliances",
+        "Audio Equipment"
+      ]
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion & Apparel",
+      "icon": "\ud83d\udc57",
+      "subcategories": [
+        "Men's Clothing",
+        "Women's Clothing",
+        "Kids Wear",
+        "Footwear",
+        "Accessories",
+        "Jewelry"
+      ]
+    },
+    {
+      "id": "home_kitchen",
+      "name": "Home & Kitchen",
+      "icon": "\ud83c\udfe0",
+      "subcategories": [
+        "Kitchenware",
+        "Home Decor",
+        "Furniture",
+        "Bedding",
+        "Storage",
+        "Appliances"
+      ]
+    },
+    {
+      "id": "beauty_health",
+      "name": "Beauty & Health",
+      "icon": "\ud83d\udc84",
+      "subcategories": [
+        "Skincare",
+        "Makeup",
+        "Haircare",
+        "Health Supplements",
+        "Personal Care",
+        "Fitness"
+      ]
+    },
+    {
+      "id": "grocery_food",
+      "name": "Grocery & Food",
+      "icon": "\ud83d\uded2",
+      "subcategories": [
+        "Fresh Produce",
+        "Packaged Foods",
+        "Beverages",
+        "Snacks",
+        "Dairy",
+        "Organic"
+      ]
+    },
+    {
+      "id": "books_education",
+      "name": "Books & Education",
+      "icon": "\ud83d\udcda",
+      "subcategories": [
+        "Academic Books",
+        "Fiction",
+        "Non-Fiction",
+        "Children's Books",
+        "E-books",
+        "Stationery"
+      ]
+    },
+    {
+      "id": "sports_fitness",
+      "name": "Sports & Fitness",
+      "icon": "\u26bd",
+      "subcategories": [
+        "Exercise Equipment",
+        "Sports Gear",
+        "Outdoor Activities",
+        "Yoga",
+        "Fitness Wear",
+        "Nutrition"
+      ]
+    },
+    {
+      "id": "travel_hotels",
+      "name": "Travel & Hotels",
+      "icon": "\u2708\ufe0f",
+      "subcategories": [
+        "Flight Bookings",
+        "Hotel Stays",
+        "Bus Travel",
+        "Train Tickets",
+        "Holiday Packages",
+        "Car Rentals"
+      ]
+    }
+  ],
+  "states": [
+    {
+      "name": "Andhra Pradesh",
+      "cities": [
+        "Hyderabad",
+        "Visakhapatnam",
+        "Vijayawada",
+        "Guntur",
+        "Nellore",
+        "Tirupati"
+      ]
+    },
+    {
+      "name": "Karnataka",
+      "cities": [
+        "Bangalore",
+        "Mysore",
+        "Hubli",
+        "Mangalore",
+        "Belgaum",
+        "Gulbarga"
+      ]
+    },
+    {
+      "name": "Maharashtra",
+      "cities": [
+        "Mumbai",
+        "Pune",
+        "Nagpur",
+        "Thane",
+        "Nashik",
+        "Aurangabad"
+      ]
+    },
+    {
+      "name": "Delhi",
+      "cities": [
+        "New Delhi",
+        "North Delhi",
+        "South Delhi",
+        "East Delhi",
+        "West Delhi",
+        "Central Delhi"
+      ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "cities": [
+        "Chennai",
+        "Coimbatore",
+        "Madurai",
+        "Salem",
+        "Tiruchirappalli",
+        "Tirunelveli"
+      ]
+    },
+    {
+      "name": "Gujarat",
+      "cities": [
+        "Ahmedabad",
+        "Surat",
+        "Vadodara",
+        "Rajkot",
+        "Bhavnagar",
+        "Jamnagar"
+      ]
+    },
+    {
+      "name": "Rajasthan",
+      "cities": [
+        "Jaipur",
+        "Jodhpur",
+        "Udaipur",
+        "Kota",
+        "Ajmer",
+        "Bikaner"
+      ]
+    },
+    {
+      "name": "West Bengal",
+      "cities": [
+        "Kolkata",
+        "Howrah",
+        "Durgapur",
+        "Asansol",
+        "Siliguri",
+        "Malda"
+      ]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "cities": [
+        "Lucknow",
+        "Kanpur",
+        "Agra",
+        "Varanasi",
+        "Meerut",
+        "Allahabad"
+      ]
+    },
+    {
+      "name": "Kerala",
+      "cities": [
+        "Kochi",
+        "Thiruvananthapuram",
+        "Kozhikode",
+        "Thrissur",
+        "Kollam",
+        "Palakkad"
+      ]
+    }
+  ],
+  "discountTypes": [
+    {
+      "id": "percentage",
+      "name": "Percentage Off",
+      "description": "Get X% off on your purchase",
+      "example": "20% OFF"
+    },
+    {
+      "id": "fixed_amount",
+      "name": "Fixed Amount Off",
+      "description": "Save a fixed amount in rupees",
+      "example": "\u20b9500 OFF"
+    },
+    {
+      "id": "bogo",
+      "name": "Buy One Get One",
+      "description": "Buy one item, get another free or discounted",
+      "example": "BOGO FREE"
+    },
+    {
+      "id": "cashback",
+      "name": "Cashback Offers",
+      "description": "Get money back on your purchases",
+      "example": "10% Cashback"
+    },
+    {
+      "id": "free_shipping",
+      "name": "Free Shipping",
+      "description": "No delivery charges on orders",
+      "example": "FREE DELIVERY"
+    },
+    {
+      "id": "bundle",
+      "name": "Bundle Deals",
+      "description": "Special pricing on product combinations",
+      "example": "COMBO OFFER"
+    }
+  ],
+  "stores": [
+    {
+      "name": "Amazon India",
+      "logo": "\ud83d\udfe0",
+      "category": "all",
+      "cashback": "Up to 5%",
+      "rating": 4.5
+    },
+    {
+      "name": "Flipkart",
+      "logo": "\ud83d\udfe1",
+      "category": "all",
+      "cashback": "Up to 7%",
+      "rating": 4.3
+    },
+    {
+      "name": "Myntra",
+      "logo": "\ud83d\udd34",
+      "category": "fashion",
+      "cashback": "Up to 6.7%",
+      "rating": 4.2
+    },
+    {
+      "name": "Nykaa",
+      "logo": "\ud83d\udc97",
+      "category": "beauty_health",
+      "cashback": "Up to 8%",
+      "rating": 4.4
+    },
+    {
+      "name": "BigBasket",
+      "logo": "\ud83d\udfe2",
+      "category": "grocery_food",
+      "cashback": "Up to 4%",
+      "rating": 4.1
+    },
+    {
+      "name": "Croma",
+      "logo": "\ud83d\udd35",
+      "category": "electronics",
+      "cashback": "Up to 3%",
+      "rating": 4.0
+    }
+  ],
+  "deals": [
+    {
+      "id": 1,
+      "title": "Samsung Galaxy S24 Ultra",
+      "store": "Amazon India",
+      "category": "electronics",
+      "original_price": 124999,
+      "discounted_price": 94999,
+      "discount_percentage": 24,
+      "discount_type": "percentage",
+      "cashback": "5% Extra Cashback",
+      "location": [
+        "Delhi",
+        "Mumbai",
+        "Bangalore"
+      ],
+      "state": [
+        "Delhi",
+        "Maharashtra",
+        "Karnataka"
+      ],
+      "valid_until": "2025-08-31",
+      "description": "Latest flagship smartphone with 200MP camera and S Pen",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "title": "Apple MacBook Air M2",
+      "store": "Flipkart",
+      "category": "electronics",
+      "original_price": 114900,
+      "discounted_price": 99900,
+      "discount_percentage": 13,
+      "discount_type": "fixed_amount",
+      "cashback": "7% Cashback",
+      "location": [
+        "Chennai",
+        "Hyderabad",
+        "Pune"
+      ],
+      "state": [
+        "Tamil Nadu",
+        "Andhra Pradesh",
+        "Maharashtra"
+      ],
+      "valid_until": "2025-09-15",
+      "description": "Ultra-thin laptop with M2 chip and 13.6-inch display",
+      "rating": 4.7
+    },
+    {
+      "id": 3,
+      "title": "Nike Air Max 270",
+      "store": "Myntra",
+      "category": "fashion",
+      "original_price": 12995,
+      "discounted_price": 7797,
+      "discount_percentage": 40,
+      "discount_type": "percentage",
+      "cashback": "6.7% Cashback",
+      "location": [
+        "Jaipur",
+        "Ahmedabad",
+        "Kolkata"
+      ],
+      "state": [
+        "Rajasthan",
+        "Gujarat",
+        "West Bengal"
+      ],
+      "valid_until": "2025-08-25",
+      "description": "Premium lifestyle sneakers with Air Max technology",
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "title": "L'Oreal Paris Skincare Kit",
+      "store": "Nykaa",
+      "category": "beauty_health",
+      "original_price": 2999,
+      "discounted_price": 1799,
+      "discount_percentage": 40,
+      "discount_type": "bogo",
+      "cashback": "8% Cashback",
+      "location": [
+        "Lucknow",
+        "Kochi",
+        "Coimbatore"
+      ],
+      "state": [
+        "Uttar Pradesh",
+        "Kerala",
+        "Tamil Nadu"
+      ],
+      "valid_until": "2025-09-01",
+      "description": "Complete skincare routine with cleanser, moisturizer and serum",
+      "rating": 4.2
+    },
+    {
+      "id": 5,
+      "title": "Organic Grocery Combo",
+      "store": "BigBasket",
+      "category": "grocery_food",
+      "original_price": 1500,
+      "discounted_price": 1200,
+      "discount_percentage": 20,
+      "discount_type": "free_shipping",
+      "cashback": "4% Cashback",
+      "location": [
+        "Surat",
+        "Vadodara",
+        "Nashik"
+      ],
+      "state": [
+        "Gujarat",
+        "Gujarat",
+        "Maharashtra"
+      ],
+      "valid_until": "2025-08-30",
+      "description": "Fresh organic vegetables, fruits and daily essentials",
+      "rating": 4.1
+    },
+    {
+      "id": 6,
+      "title": "Sony WH-1000XM5 Headphones",
+      "store": "Croma",
+      "category": "electronics",
+      "original_price": 29990,
+      "discounted_price": 24990,
+      "discount_percentage": 17,
+      "discount_type": "bundle",
+      "cashback": "3% Cashback",
+      "location": [
+        "Thiruvananthapuram",
+        "Jodhpur",
+        "Howrah"
+      ],
+      "state": [
+        "Kerala",
+        "Rajasthan",
+        "West Bengal"
+      ],
+      "valid_until": "2025-09-10",
+      "description": "Industry-leading noise canceling with 30-hour battery life",
+      "rating": 4.6
+    }
+  ]
+}

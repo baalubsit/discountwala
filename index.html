@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscountFinder India - Best Deals & Discounts Across India</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>💰 DiscountFinder India</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#deals" class="nav-link">Deals</a>
+                    <a href="#about" class="nav-link">About</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="search-input" class="search-input" placeholder="Search deals, stores, products...">
+                        <div class="search-suggestions" id="search-suggestions"></div>
+                    </div>
+                    <div class="user-profile">
+                        <span class="user-icon">👤</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Discover India's Best Discounts & Deals</h2>
+                    <p class="hero-description">Save big with exclusive offers across 10,000+ stores in 500+ cities. Find the perfect deal near you!</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Active Deals</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Cities</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">₹50L+</span>
+                            <span class="stat-label">Money Saved</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary btn--lg cta-button">Explore Deals Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <div class="filters-content">
+                <h3 class="filters-title">Find Your Perfect Deal</h3>
+                <form class="filters-form" id="filters-form">
+                    <div class="filter-group">
+                        <label class="form-label" for="category-filter">Shopping Category</label>
+                        <select id="category-filter" class="form-control">
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="form-label" for="state-filter">State</label>
+                        <select id="state-filter" class="form-control">
+                            <option value="">Select State</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="form-label" for="city-filter">City</label>
+                        <select id="city-filter" class="form-control" disabled>
+                            <option value="">Select City</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="form-label" for="location-filter">Location/Area</label>
+                        <input type="text" id="location-filter" class="form-control" placeholder="Enter specific area">
+                    </div>
+                    <div class="filter-group">
+                        <label class="form-label" for="discount-type-filter">Discount Type</label>
+                        <select id="discount-type-filter" class="form-control">
+                            <option value="">All Discount Types</option>
+                        </select>
+                    </div>
+                    <div class="filter-actions">
+                        <button type="button" class="btn btn--primary" id="apply-filters">Apply Filters</button>
+                        <button type="button" class="btn btn--outline" id="clear-filters">Clear All</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Deals Section -->
+    <section class="deals" id="deals">
+        <div class="container">
+            <div class="deals-header">
+                <h3 class="deals-title">Featured Deals</h3>
+                <div class="sort-options">
+                    <label class="form-label" for="sort-select">Sort by:</label>
+                    <select id="sort-select" class="form-control">
+                        <option value="discount_percentage">Highest Discount</option>
+                        <option value="price_low">Price: Low to High</option>
+                        <option value="price_high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="expiry">Ending Soon</option>
+                    </select>
+                </div>
+            </div>
+            <div class="loading-spinner hidden" id="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading deals...</p>
+            </div>
+            <div class="deals-grid" id="deals-grid">
+                <!-- Deal cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h3 class="categories-title">Shop by Categories</h3>
+            <div class="categories-grid" id="categories-grid">
+                <!-- Category cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Stores Section -->
+    <section class="stores">
+        <div class="container">
+            <h3 class="stores-title">Popular Stores</h3>
+            <div class="stores-scroll" id="stores-scroll">
+                <!-- Store cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Deal Details Modal -->
+    <div class="modal hidden" id="deal-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modal-title">Deal Details</h4>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--primary btn--full-width" id="grab-deal-btn">Grab This Deal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DiscountFinder India</h4>
+                    <p>Your trusted partner for finding the best deals and discounts across India.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@discountfinderindia.com</p>
+                    <p>📞 +91-9876543210</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📘 Facebook</a>
+                        <a href="#" target="_blank">🐦 Twitter</a>
+                        <a href="#" target="_blank">📷 Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DiscountFinder India. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
